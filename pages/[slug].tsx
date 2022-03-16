@@ -11,7 +11,6 @@ import { getAllPosts, getPostsBySlug } from "../data/posts";
 const Container: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = (
   props
 ) => {
-  console.log(props);
   return null;
 };
 
