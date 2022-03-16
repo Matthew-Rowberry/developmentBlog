@@ -1,9 +1,9 @@
 import axios from "axios";
 import type { NextPage } from "next";
 import Head from "next/head";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-import { getAllPosts } from "../data/posts";
+import Footer from "../lib/components/Footer";
+import Header from "../lib/components/Header";
+import { getAllPosts } from "../lib/data/posts";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = (props) => {

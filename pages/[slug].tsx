@@ -6,7 +6,7 @@ import {
   NextPage,
 } from "next";
 import { ParsedUrlQuery } from "querystring";
-import { getAllPosts, getPostsBySlug } from "../data/posts";
+import { getAllPosts, getPostsBySlug } from "../lib/data/posts";
 
 const Container: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = (
   props
