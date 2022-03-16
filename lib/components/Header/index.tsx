@@ -1,23 +1,23 @@
 import React from "react";
 import Link from "next/link";
-import { HeaderContainer, NavBar } from "./style";
+import { NavBar } from "./style";
+import { Box, Flex } from "rebass";
+import LinkText from "../LinkText";
 const Header: React.FC = () => {
   return (
-    <HeaderContainer>
+    <Flex as={"header"}>
       <NavBar>
-        <div>
-          <Link href="/">
-            <a>Matthew Rowberry</a>
-          </Link>
-        </div>
+        <Box>
+          <LinkText href="/">Matthew Rowberry</LinkText>
+        </Box>
 
-        <div>
-          <div>
-            <a>Link</a>
-          </div>
-        </div>
+        <Box>
+          <Box>
+            <LinkText href="/">My Link</LinkText>
+          </Box>
+        </Box>
       </NavBar>
-    </HeaderContainer>
+    </Flex>
   );
 };
 

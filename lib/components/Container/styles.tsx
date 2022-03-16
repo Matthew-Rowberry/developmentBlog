@@ -1,11 +1,9 @@
 import styled from "@emotion/styled";
+import { Box } from "rebass";
 
-export const ContainerDiv = styled.div`
+export const ContainerDiv = styled(Box)`
   width: 100%;
-  margin-left: auto;
   box-sizing: border-box;
-  margin-right: auto;
-  display: block;
   padding-left: 24px;
   padding-right: 24px;
 `;
