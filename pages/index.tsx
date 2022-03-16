@@ -1,8 +1,10 @@
 import axios from "axios";
 import type { NextPage } from "next";
 import Head from "next/head";
+import Container from "../lib/components/Container";
 import Footer from "../lib/components/Footer";
 import Header from "../lib/components/Header";
+import Section from "../lib/components/Section";
 import { getAllPosts } from "../lib/data/posts";
 import styles from "../styles/Home.module.css";
 
@@ -11,7 +13,6 @@ const Home: NextPage = (props) => {
     <div
       //@ts-ignore
       style={{ backgroundColor: props.color }}
-      className={styles.container}
     >
       <Head>
         <title>Create Next App</title>
@@ -19,9 +20,13 @@ const Home: NextPage = (props) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <Header />
       <main className={styles.main}>
-        <Header />
-        <h1>Inspire</h1>
+        <Section>
+          <Container>
+            <h1>Inspire</h1>
+          </Container>
+        </Section>
       </main>
 
       <Footer />

@@ -1,21 +1,23 @@
 import React from "react";
 import Link from "next/link";
-import { NavBar } from "./style";
+import { HeaderContainer, NavBar } from "./style";
 const Header: React.FC = () => {
   return (
-    <NavBar>
-      <div>
-        <Link href="/">
-          <a>Matthew Rowberry</a>
-        </Link>
-      </div>
-
-      <div>
+    <HeaderContainer>
+      <NavBar>
         <div>
-          <a>Link</a>
+          <Link href="/">
+            <a>Matthew Rowberry</a>
+          </Link>
         </div>
-      </div>
-    </NavBar>
+
+        <div>
+          <div>
+            <a>Link</a>
+          </div>
+        </div>
+      </NavBar>
+    </HeaderContainer>
   );
 };
 
